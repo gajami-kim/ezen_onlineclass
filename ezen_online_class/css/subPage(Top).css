@@ -1,0 +1,111 @@
+body{
+    box-sizing: border-box;
+    min-width: 1900px;
+}
+header{
+    /* background-color: beige; */
+    height: 121px;
+    text-align: center;
+    line-height: 80px;
+}
+.contain{
+    /* background-color: antiquewhite; */
+    font-family: 'NanumSquareR';
+}
+.pgtitle{
+    background-color: #0f426c;
+    height: 350px;
+    position: relative;
+}
+
+.pgtitle .pg_div{
+    /* background-color: bisque; */
+    width: 60%;
+    height: 300px;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pgtitle .pg_div .pgimg img{
+    height: 300px;
+    margin-left: 120px;
+    border-radius: 5px;
+}
+.pgtitle .pg_div .program{
+    /* background-color: aliceblue; */
+    width: 500px;
+    color: white;
+}
+.pgtitle .pg_div .program .progrm_sub{
+    padding: 80px 0 0 20px;
+    line-height: 1.6;
+}
+.pgtitle .pg_div .program .progrm_sub h1{
+    font-size: 20px;
+    font-family: 'NanumSquareEB';
+    margin-bottom: 10px; 
+}
+.pgtitle .pg_div .program .progrm_sub img:last-of-type{
+    margin-right: 8px;
+}
+.pgtitle .pg_div .program .progrm_sub .incre{
+    font-family: 'NanumSquareB';
+}
+.pgtitle .pg_div .program .progrm_sub .name img,
+.pgtitle .pg_div .program .progrm_sub .hash img{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+}
+.pgtitle .pg_div .program .progrm_sub .name img{
+    top: 51%;
+}
+.pgtitle .pg_div .program .progrm_sub .name span,
+.pgtitle .pg_div .program .progrm_sub .hash span{
+    position: absolute;
+}
+.pgtitle .pg_div .program .progrm_sub .name span{
+    left: 680px;
+    top: 150px;
+}
+.pgtitle .pg_div .program .progrm_sub .hash span{
+    top: 180px;
+    left: 680px;
+    background-color: rgb(231, 231, 231);
+    width: 60px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    line-height: 26px;
+    font-family: 'NanumSquareEB' ;
+    font-size: 14px;
+}
+.pgtitle .pg_div .program .progrm_sub .hash span:last-of-type{
+    left: 745px;
+    width: 75px;
+}
+
+.pgtitle .pg_div .program .progrm_sub .hash img{
+    top: 61%;
+}
+
+.pgcontain{
+    /* background-color: aliceblue; */
+    height: 1700px;
+    position: relative;
+}
+.pgcontain .pgc_div{
+    /* background-color: rgb(55, 84, 109); */
+    /* border: 1px solid black; */
+    width: 1400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+    display: flex;
+}

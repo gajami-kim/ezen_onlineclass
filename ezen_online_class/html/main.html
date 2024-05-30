@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header2.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="inner">
+            <form action="">
+                <div class="top">
+                    <div class="top_part">
+                        <a href="main.html">
+                            <div class="logo_img"></div>
+                        </a>
+                        <div class="search_part">
+                            <img src="../image/search_icon.png" alt="" width="13px" height="13px">
+                            <input type="text" class="search_bar" placeholder="찾고싶은 강의를 입력하세요">
+                        </div>
+                        <div class="inner sectionBox1">
+                            <button type="button" id="mypageBtn" onclick="showMypage()">마이페이지</button>
+                            <button type="button" id="loginBtn" class="login">
+                                <a href="../html/login.html">로 그 인</a>
+                            </button>
+                            <button type="button" id="logoutBtn" class="logout" >
+                                <a href="../html/main.html">로그아웃</a>
+                            </button> 
+                            <!-- <button type="button" id="loginBtn"><a href="../html/login.html">로 그 인</a></button>
+                            <button type="button" id="loginBtn"><a href="../html/login.html">로그아웃</a></button> -->
+                            <button type="button" id="joinBtn"><a href="../html/signup.html">회원가입</a></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 메뉴바 -->
+                <nav>
+                    <div class="menubar">
+                        <ul>
+                            <li class="cate">
+                                <li class="big">.     </li>
+                                <div class="cate_text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                    </svg>
+                                    <div class="text">카테고리</div>
+                                </div>
+                            </li>
+                        <li class="big"><a href="../html/ClassPage_M.html">강    의</a>
+                            <ul>
+                                <li><a href="../html/ClassPage_M.html">개발 · 프로그래밍</a></li>
+                                <li><a href="../html/ClassPage_M.html">요리 · 음료</a></li>
+                                <li><a href="../html/ClassPage_M.html">디자인</a></li>
+                                <li><a href="../html/ClassPage_M.html">금융 · 재테크</a></li>
+                                <li><a href="../html/ClassPage_M.html">뷰티</a></li>
+                            </ul>
+                        </li>
+                        <li class="big"><a href="../html/teacherCard.html">강 사 진</a>
+                            <ul>
+                                <li><a href="../html/teacherCard.html">강사소개</a></li>
+                            </ul>
+                        </li>
+                        <li class="big"><a href="../html/infromation.html">상담신청</a>
+                            <ul>
+                                <li><a href="">10초 안내받기</a></li>
+                            </ul>
+                        </li>
+                        <li class="big"><a href="../html/faq.html">공지사항</a>
+                            <ul>
+                                <li><a href="../html/infromation.html">FAQ</a></li>
+                                <li><a href="../html/infromation.html">이용문의</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            </form>
+        </div>
+    </header>
+    <!-- 슬라이드 이미지(강의 홍보, 이벤트 등 3~4개) -->
+    <section>
+        <div class="inner sectionBox2">
+            <div class="slideImg">
+                <div class="slideImgInner">
+                    <div class="slide slideImg1"><a href=""><img src="../image/banner_event1.jpg" alt="" id="img"></a></div>     
+                    <div class="slide slideImg2"><a href=""><img src="../image/banner_event2.jpg" alt=""></a></div>     
+                    <div class="slide slideImg3"><a href=""><img src="../image/banner_event3.jpg" alt=""></a></div>     
+                </div>
+            </div>
+            <div class="sectionSlideBtn">
+                <a href="#" class="leftBtn"><img src="../icon/chevron_left.png" alt=""></button></a>
+                <a href="#" class="rightBtn"><img src="../icon/chevron_right.png" alt=""></button></a>
+            </div>
+            <div class="slideDotBtn">
+                <a href="#" class="DotBtn DotBtn1"><img src="../icon/fiber_manual_record.png" alt=""></button></a>
+                <a href="#" class="DotBtn DotBtn2"><img src="../icon/fiber_manual_record.png" alt=""></button></a>
+                <a href="#" class="DotBtn DotBtn3"><img src="../icon/fiber_manual_record.png" alt=""></button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- main -->
+    <main>
+        <div>
+            <!-- 검색창
+            <div class="inner mainBox1">
+                <input type="text" id="search" placeholder="어떤 강의를 찾으시나요?">
+                <button type="button" id="searchBtn"><img src="../icon/search.png" alt=""></button>
+            </div> -->
+            <!-- 강의카테고리 -->
+                <div class="inner mainBox2">
+                    <ul>
+                        <li><a href="../html/ClassPage_M.html">
+                            <img src="../image/category1.jpg" alt="">
+                            <p>개발 · 프로그래밍</p></a></li>
+                        <li><a href="../html/ClassPage_M.html">
+                            <img src="../image/category2.jpg" alt="">
+                            <p>요리 · 음료</p></a></li>
+                        <li><a href="../html/ClassPage_M.html">
+                            <img src="../image/category3.jpg" alt="">
+                            <p>디자인</p></a></li>
+                        <li><a href="../html/ClassPage_M.html">
+                            <img src="../image/category4.jpg" alt="">
+                            <p>금융 · 재테크</p></a></li>
+                        <li><a href="../html/ClassPage_M.html">
+                            <img src="../image/category5.jpg" alt="">
+                            <p>뷰티</p></a></li>
+                    </ul>
+                </div>
+                <!-- 프로모션 & 이벤트 -->
+                <div class="inner mainBox3">
+                    <div>
+                        <p>EVENT</p>
+                        <p>프로모션 & 이벤트</p>
+                    </div>
+                    <ul>
+                        <li><a href="#"><img src="../image/banner_ad1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="../image/banner_ad2.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <!-- 실시간 인기 클래스 -->
+                <div class="inner mainBox4">
+                    <div>
+                        <p>NEW</p>
+                        <p>실시간 인기 클래스</p>
+                    </div>
+                        <ul>
+                        <li><a href="">
+                            <img src="../image/Dseign_System.png" alt="">
+                            <p>피그마 배리어블을 활용한 디자인 시스템 구축하기</p></a></li>
+                        <li><a href="">
+                            <img src="../image/FigmaAppPlanning.png" alt="">
+                            <p>웹 기획의 새로운 방식, Figma!</p></a></li>
+                        <li><a href="">
+                            <img src="../image/MySQL_DB.png" alt="">
+                            <p>처음하는 SQL과 데이터베이스 부트캠프</p></a></li>
+                        <li><a href="">
+                            <img src="../image/Java_Algorithm.png" alt="">
+                            <p>자바(Java) 알고리즘 문제풀이 : 코딩테스트 대비</p></a></li>
+                    </ul>
+                </div>
+                <!-- 프로그래밍 인기 클래스 -->
+                <div class="inner mainBox5">
+                    <div>
+                        <p>HOT</p>
+                        <p>프로그래밍 인기 클래스</p>
+                    </div>
+                        <ul>
+                        <li><a href="">
+                            <img src="../image/HTTP.png" alt="">
+                            <p>모든 개발자를 위한 HTTP 실무 웹 기본 지식</p></a></li>
+                        <li><a href="">
+                            <img src="../image/spring_core_basic.png" alt="">
+                            <p>스프링 핵심 원리 - 기본편</p></a></li>
+                        <li><a href="">
+                            <img src="../image/Java_basic.png" alt="">
+                            <p>김영한의 실전자바 - 기본편</p></a></li>
+                        <li><a href="">
+                            <img src="../image/JavaScript_ES6.jpg" alt="">
+                            <p>함수형 프로그래밍과 JavaScript ES6+</p></a></li>
+                        </ul>
+                    </div>
+                <div class="inner mainBox6">
+                    <a href="#"><button type="button" class="topBtn">TOP</button></a>
+                </div>
+    </main>
+    <div class="inner bottom">
+        <p>이젠온라인클래스의 더 많은 소식</p>
+        <a href="https://www.youtube.com/"><img src="../icon/icon-youtube-on.png" alt=""></a>
+        <a href="https://www.instagram.com/"><img src="../icon/icon-instagram-on.png" alt=""></a>
+        <a href="https://section.blog.naver.com/BlogHome.naver"><img src="../icon/icon-blog-on.png" alt=""></a>
+        <a href="https://www.facebook.com/?locale=ko_KR"><img src="../icon/icon-facebook-on.png" alt=""></a>
+    </div>
+    <footer>
+        <div class="inner">
+        <div class="footer1">
+            <ul>
+                <li><a href="">기업 제휴 및 입점 문의</a></li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">개인정보처리방침</a></li>
+                <li><a href="">사이트맵</a></li>
+            </ul>
+            <hr>
+        </div>
+        <div class="footer2">
+            <span>이젠 온라인클래스</span>
+            <span>대표이사 : 이젠</span>
+            <span>사업자등록번호 : 123-45-67890</span>
+            <span>주소 : 인천광역시 남동구 인주대로593 엔타스빌딩 12층</span>
+            <span>대표번호 : 1544-8147</span>
+        </div>
+        <div class="footer3">
+            <span>Copyright by EZEN. All rights reserved.</span>
+        </div>
+    </div>
+    </footer>
+</div>
+<script src="../js/main.js"></script>
+<script src="../js/saveUser.js"></script>
+<script src="../js/loginout.js"></script>
+</body>
+</html>

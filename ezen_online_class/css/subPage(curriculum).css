@@ -1,0 +1,53 @@
+.bold{
+    font-family: 'NanumSquareEB';
+}
+.pgcontain .pgc_div .story .curriculum{
+    width: 900px;
+    padding-bottom: 60px;
+    margin: 30px auto 0;
+    /* background-color: rgb(225, 237, 248); */
+    box-sizing: border-box;
+    display: none;
+}
+.pgcontain .pgc_div .story .curriculum
+.curri_title p{
+    line-height: 2;;
+}
+.pgcontain .pgc_div .story .curriculum
+.curri_title p:first-of-type{
+    font-size: 23px;
+    font-family: 'NanumSquareEB';
+}
+.pgcontain .pgc_div .story .curriculum
+.curri_title p:last-of-type{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.pgcontain .pgc_div .story .curriculum .sectionbody{
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 5px;
+    width: 800px;
+}
+.pgcontain .pgc_div .story .curriculum .section svg{
+    margin-right: 20px;
+}
+.pgcontain .pgc_div .story .curriculum .section .inner{
+    height: 35px;
+    padding-left: 20px;
+    line-height: 33.3px;
+    cursor: pointer;
+}
+.pgcontain .pgc_div .story .curriculum .section .box{
+    background-color: #3e9ae518;
+    border-bottom: 0.5px solid #3e9ae528;
+}
+.pgcontain .pgc_div .story .curriculum .section .box .rigth{
+    float: right;
+    margin-right: 20px;
+}
+.section_off{
+    display: none;
+}
+/* .none{
+    display: none;
+} */

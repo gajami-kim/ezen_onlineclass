@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/pay.css">
+  <link rel="stylesheet" href="../css/pay_header.css">
+  <link rel="stylesheet" href="../css/pay_main.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <title>결제</title>
+</head>
+<body>
+   <div class="wrapper">
+    <header>
+      <div class="inner">
+          <form action="">
+              <div class="top">
+                  <div class="top_part">
+                      <a href="main.html">
+                          <div class="logo_img"></div>
+                      </a>
+                      <div class="search_part">
+                          <img src="../image/search_icon.png" alt="" width="13px" height="13px">
+                          <input type="text" class="search_bar" placeholder="찾고싶은 강의를 입력하세요">
+                      </div>
+                      <div class="inner sectionBox1">
+                          <button type="button" id="mypageBtn"><a href="../html/mypage.html">마이페이지</a></button>
+                          <button type="button" id="loginBtn"><a href="../html/login.html">로 그 인</a></button>
+                          <button type="button" id="joinBtn"><a href="../html/signup.html">회원가입</a></button>
+                      </div>
+                  </div>
+              </div>
+              <!-- 메뉴바 -->
+              <nav>
+                  <div class="menubar">
+                      <ul>
+                          <li class="cate">
+                              <li class="big">.     </li>
+                              <div class="cate_text">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                  </svg>
+                                  <div class="text">카테고리</div>
+                              </div>
+                          </li>
+                      <li class="big"><a href="../html/ClassPage_M.html">강    의</a>
+                          <ul>
+                              <li><a href="../html/ClassPage_M.html">개발 · 프로그래밍</a></li>
+                              <li><a href="../html/ClassPage_M.html">요리 · 음료</a></li>
+                              <li><a href="../html/ClassPage_M.html">디자인</a></li>
+                              <li><a href="../html/ClassPage_M.html">금융 · 재테크</a></li>
+                              <li><a href="../html/ClassPage_M.html">뷰티</a></li>
+                          </ul>
+                      </li>
+                      <li class="big"><a href="../html/teacherCard.html">강 사 진</a>
+                          <ul>
+                              <li><a href="../html/teacherCard.html">강사소개</a></li>
+                          </ul>
+                      </li>
+                      <li class="big"><a href="../html/infromation.html">상담신청</a>
+                          <ul>
+                              <li><a href="../html/infromation.html">10초 안내받기</a></li>
+                          </ul>
+                      </li>
+                      <li class="big"><a href="../html/faq.html">공지사항</a>
+                          <ul>
+                              <li><a href="../html/faq.html">FAQ</a></li>
+                              <li><a href="../html/faq.html">이용문의</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+          </form>
+      </div>
+  </header>
+    <div class="top1">
+      <div class="mid1">
+        <div class="payment">결제</div>
+        <div class="check_box">
+          <label class="checkAll_label">
+            <input type="checkbox" name="checkAll" class="checkAll" onclick="selectAll(this),checkCourse()">
+            <span class="checkAll_icon"></span>
+            <span class="checkAll_text">전체선택</span>
+          </label>
+          <button type="button" class="delete">
+            선택삭제 X
+          </button>
+          <hr>
+        </div>
+      </div>
+      <div class="mid2">
+        <div class="cour1">
+          <div class="course">
+            <label class="checkObj_label">
+              <input type="checkbox" name="check" class="checkObj cou1" onclick="checkCourse(),checkSelectAll()">
+              <span class="checkObj_icon"></span>
+            </label>
+            <img src="../image/spring_core_basic.png" alt="강의썸네일">
+            <div class="text_b">
+              <div class="sub_name">스프링 핵심 원리</div>
+              <div class="bt">
+                <span class="pro_name after">김영한</span>
+                <span class="sub_pri">무제한 수강</span>
+              </div>
+            </div>
+            <div class="x"></div>
+            <div class="line"></div>
+          </div>
+          <div class="price">
+            <div class="price_text">
+              <span class="ratio">30%</span>
+              <span class="won_price"><del>88,000원</del></span>
+              <div class="total_price">61,600</div>
+              <div class="won">원</div>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <!-- <div class="course">
+          <label class="checkObj_label">
+            <input type="checkbox" name="check" class="checkObj cou1" onclick="checkCourse(),checkSelectAll()">
+            <span class="checkObj_icon"></span>
+          </label>
+          <img src="../image/FigmaAppPlanning.png" alt="강의썸네일">
+          <div class="text">
+            <div class="sub_name">피그마 배리어블을 활용한 디자인 시스템 구축하기</div>
+            <div class="bt">
+              <span class="pro_name after">이정환 WinterLood</span>
+              <span class="sub_pri">무제한 수강</span>
+            </div>
+          </div>
+          <div class="x"></div>
+          <div class="line"></div>
+        </div> -->
+        <!-- <div class="price">
+          <div class="price_text">
+            <span class="ratio">10%</span>
+            <span class="won_price"><del>48,400원</del></span>
+            <div class="total_price">43,560</div>
+            <div class="won">원</div>
+          </div>
+        </div> -->
+        <div class="cour2">
+          <div class="course">
+            <label class="checkObj_label">
+              <input type="checkbox" name="check" class="checkObj cou2" onclick="checkCourse(),checkSelectAll()">
+              <span class="checkObj_icon"></span>
+            </label>
+            <img src="../image/HTTP.png" alt="강의썸네일">
+            <div class="text_b">
+              <div class="sub_name">모든 개발자를 위한 HTTP 웹 기본 지식</div>
+              <div class="bt">
+                <span class="pro_name after">이정환 WinterLood</span>
+                <span class="sub_pri">무제한 수강</span>
+              </div>
+            </div>
+            <div class="x"></div>
+            <div class="line"></div>
+          </div>
+          <div class="price price2">
+            <div class="price_text">
+              <span class="ratio">30%</span>
+              <span class="won_price"><del>44,000원</del></span>
+              <div class="total_price">30,800</div>
+              <div class="won">원</div>
+            </div>
+          </div>
+          <hr>
+        </div>
+
+        <div class="cour3">
+          <div class="course">
+            <label class="checkObj_label">
+              <input type="checkbox" name="check" class="checkObj cou3" onclick="checkCourse(),checkSelectAll()">
+              <span class="checkObj_icon"></span>
+            </label>
+            <img src="../image/프론트엔지니어.png" alt="강의썸네일">
+            <div class="text_b">
+              <div class="sub_name">처음하는 SQL과 데이터베이스 부트캠프</div>
+              <div class="bt">
+                <span class="pro_name after">조유성, 하태영, 배휘동</span>
+                <span class="sub_pri">무제한 수강</span>
+              </div>
+            </div>
+            <div class="x"></div>
+            <div class="line"></div>
+          </div>
+          <div class="price price3">
+            <div class="price_text">
+              <div class="total_price">32,000</div>
+              <div class="won">원</div>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+    <form action="" id="pay_form">
+      <div class="side">
+        <div class="side1">
+          <div class="cus_info">구매자정보</div>
+          <hr>
+            <div class="info_box">
+              <div class="cus_name star">이름</div>
+              <input type="text" class="cus_i" id="cusName" placeholder="이름 입력">
+              <span class="failN"></span>
+              <div class="cus_email star">이메일</div>
+              <input type="text" class="cus_i" id="cusEmail" placeholder="이메일 입력">
+              <span class="failE"></span>
+              <div class="cus_phone star">휴대폰 번호</div>
+              <input type="text" class="cus_i" id="cusPhone" placeholder="01012341234">
+              <span class="failP"></span>
+            </div>    
+          </div>
+        <div class="side2">
+          <ul>
+            <div class="pay_info">결제정보</div>
+            <hr>
+            <li>선택상품 금액</li>
+            <span class="selectpay">0원</span>
+            <li>할인금액</li>
+            <span class="ratiopay">0원</span>
+            <li>총 결제 금액</li>
+            <span class="totalpay">0원</span>
+          </ul>
+          <div class="pay_bottom">
+            <button type="button" id="payBtn" class="pay"> 결제하기</button>
+            <p class="extra_1">회원 본인은 주문내용을 확인했으며,</p>
+            <p class="extra_2"><ins>구매조건 및 개인정보처리방침과 결제에 동의합니다.</ins></p>
+          </div>
+        </div>
+      </div>
+    </form>
+   </div>
+   <footer>
+    <div class="inner">
+    <div class="footer1">
+        <ul>
+            <li><a href="">기업 제휴 및 입점 문의</a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">사이트맵</a></li>
+        </ul>
+        <hr>
+    </div>
+    <div class="footer2">
+        <span>이젠 온라인클래스</span>
+        <span>대표이사 : 이젠</span>
+        <span>사업자등록번호 : 123-45-67890</span>
+        <span>주소 : 인천광역시 남동구 인주대로593 엔타스빌딩 12층</span>
+        <span>대표번호 : 1544-8147</span>
+    </div>
+    <div class="footer3">
+        <span>Copyright by EZEN. All rights reserved.</span>
+    </div>
+</div>
+</footer>
+   <script src="../js/pay.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'NanumSquareB';
+    src: url(../font/nanum-square/NanumSquareB.ttf);
+}
+@font-face {
+    font-family: 'NanumSquareEB';
+    src: url(../font/nanum-square/NanumSquareEB.ttf);
+}
+
+.inner{
+    /* background-color: rgb(215, 246, 250); */
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/* footer */
+footer>.inner{
+    width: 1200px;
+    background-color: white;
+}
+
+footer>.inner>.footer1>ul{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer>.inner>.footer1>ul>li>a{
+    color: #2e2e2e;
+    font-size: 15px;
+    font-family: 'NanumSquareR';
+}
+footer>.inner>.footer1>ul>li>a:hover{
+    /* font-family: 'NanumSquareB'; */
+    color: #3e9ae5;
+}
+footer>.inner>.footer2{
+    width: 435px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+footer>.inner>.footer2>span{
+    margin: 7px 0 7px 130px;
+    color: #2e2e2e;
+    font-size: 13px;
+    font-family: 'NanumSquareB';
+}
+footer>.inner>.footer3{
+    padding: 20px 0 30px 0;
+}
+footer>.inner>.footer3>span{
+    margin: 0 0 0 130px;
+    color: #2e2e2e;
+    font-size: 12px;
+    font-family: 'NanumSquareB';
+}
+footer hr {
+    background: #f0f0f0;
+    height: 2px;
+    border: none;
+}

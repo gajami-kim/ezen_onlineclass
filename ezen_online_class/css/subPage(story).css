@@ -1,0 +1,122 @@
+/* 상세페이지 내용 */
+.bold{
+    font-family: 'NanumSquareEB';
+}
+.pgcontain .pgc_div .story{
+    width: 1000px;
+}
+.pgcontain .pgc_div .story .story_box{
+    width: 900px;
+    padding-bottom: 60px;
+    margin: 30px auto 0;
+    /* display: none; */
+}
+.pgcontain .pgc_div .story .story_box .bord{
+    font-family: 'NanumSquareEB';
+}
+.pgcontain .pgc_div .story .story_box ._1{
+    font-size: 23px;
+    line-height: 1.4;
+}
+.pgcontain .pgc_div .story .story_box ._1 p:last-of-type{
+    font-size: 17px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.pgcontain .pgc_div .story .story_box ._2 {
+    display: flex;
+    justify-content: left;
+    width: 730px;
+    height: 55px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 10px;
+    padding : 20px 0 14px 60px;
+    margin-bottom: 20px;
+}
+.pgcontain .pgc_div .story .story_box ._2 .get_left{
+    text-align: center;
+    margin-right: 60px;
+}
+.pgcontain .pgc_div .story .story_box ._2 .get_left p{
+    font-family: 'NanumSquareRoundEB';
+    line-height: 1.2;
+}
+.pgcontain .pgc_div .story .story_box ._2 .get_rigth{
+    line-height: 50px;
+}
+.pgcontain .pgc_div .story .story_box ._2 .get_rigth svg{
+    margin-left: 25px;
+    width: 24px;
+    height: 24px;
+    color: #3e9ae5;
+}
+.pgcontain .pgc_div .story .story_box ._3{
+    width: 790px;
+    height: 65px;
+    background-color: #0f426c;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-family: 'NanumSquareEB';
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.pgcontain .pgc_div .story .story_box ._4 ._4_box,
+.pgcontain .pgc_div .story .story_box ._5 ._5_box{
+    width: 790px;
+}
+.pgcontain .pgc_div .story .story_box ._4 .title{
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+.pgcontain .pgc_div .story .story_box ._4
+.title span:last-of-type{
+    background-color: #3e9ae5;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 17px;
+    font-family: 'NanumSquareEB';
+    color: white;
+}
+.pgcontain .pgc_div .story .story_box ._4 .title p{
+    font-size: 20px;
+    margin-top: 15px;
+    box-shadow: inset 0 -10px 0 #3e9ae518;
+    width: 350px;
+}
+.pgcontain .pgc_div .story .story_box ._4 img{
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 25px;
+}
+.pgcontain .pgc_div .story .story_box
+._4 .title_inner,
+.pgcontain .pgc_div .story .story_box
+._5 ._5_box {
+    line-height: 1.5;
+}
+.pgcontain .pgc_div .story .story_box
+._4 .title_inner p:first-of-type,
+.pgcontain .pgc_div .story .story_box
+._5 ._5_box p:first-of-type{
+    font-size:20px;
+    font-family: 'NanumSquareB';
+    margin-bottom: 10px;
+}
+.pgcontain .pgc_div .story .story_box
+._4 .title_inner p:nth-of-type(2){
+    margin-bottom: 25px;
+}
+.pgcontain .pgc_div .story .story_box
+._4 .title_inner p:nth-of-type(3){
+    margin-bottom: 40px;
+}
+.pgcontain .pgc_div .story .story_box ._5 img{
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-bottom: 25px;
+}
+.pgcontain .pgc_div .story .story_box ._5 ._5_box p:nth-of-type(2){
+    margin-bottom: 20px;
+}

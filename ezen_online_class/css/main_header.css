@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'NanumSquareB';
+    src: url(../font/nanum-square/NanumSquareB.ttf);
+}
+@font-face {
+    font-family: 'NanumSquareEB';
+    src: url(../font/nanum-square/NanumSquareEB.ttf);
+}
+
+.inner{
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/* header */
+header{
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+.top{
+    background-color: white;
+    padding-top: 20px;
+    width: 100%;
+    height: 40px;
+    padding-bottom: 20px;
+}
+.top .top_part{
+    width: 63%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.logo_img{
+    width: 150px;
+    height: 40px;
+    background-image: url(../icon/logo2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 80px;
+}
+.search_part{
+    width: 500px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 340px;
+}
+.search_part input{
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    margin-top: 4px;
+    border: 1px solid gainsboro;
+    padding-left: 35px;
+    border-radius: 20px;
+    font-family: NanumSquareR;
+    outline: none;
+    background-color: rgba(220, 220, 220, 0.212);
+}
+.search_part img{
+    position: absolute;
+    opacity: 0.5;
+    top: 15px;
+    left: 18px;
+}
+.sectionBox1{
+    width: 400px;
+    position: absolute;
+    text-align: right;
+    right: 0;
+    top: 8px;
+}
+.sectionBox1 button{
+    width: 80px;
+    height: 28px;
+    border: none;
+    border-radius: 10px;
+}
+.sectionBox1 button a{
+    color: gray;
+    font-family: 'NanumSquareB';
+    font-size: 12.5px;
+    line-height: 28px;
+}
+.sectionBox1 button:hover{
+    background-color: #3684c4;
+    font-family: 'NanumSquareB';
+}
+.sectionBox1 button>a:hover{
+    color:white;
+    font-size: 12.5px;
+    font-family: 'NanumSquareB';
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: white;
+    border-bottom: 1px solid gainsboro;
+    box-shadow: 0 4px 4px -4px gainsboro;
+}
+nav .menupart{
+    width: 63%;
+    height: 100%;
+    margin: 0 auto;
+}
+nav .menupart #menuBar{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;
+    padding-top: 10px;
+}
+nav .menupart #menuBar>li{
+    margin: 0 24px;
+    width: 240px;
+    text-align: center;
+}
+nav .menupart #menuBar>li>a{
+    font-size: 20px;
+    text-decoration-line: none;
+    line-height: 80px;
+    color: #0f426c;
+    font-family: 'NanumSquareEB';
+}
+.li{
+    position: relative;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    width: 180px;
+    left: 30px;
+    font-family: NanumSquareEB;
+    margin-top: 9px;
+}
+.menubar{
+    font-family: NanumSquareB;
+    font-size: 18px;
+    width: 63.3%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+.cate{
+    position: relative;
+}
+.cate_text{
+    background-color: #3684c4d3;
+    border-radius: 7px;
+    color: white;
+    width: 120px;
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16.5px;
+    margin: 5px 0 0 100px;
+}
+.text{
+    position: absolute;
+    color: white;
+    left: 38px;
+    top: 1px;
+}
+.cate_text svg{
+    position: absolute;
+    left: 13px;
+    top: 4.5px;
+}
+.menubar a{
+    color: #0f426c;
+}
+.menubar>ul>li{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.menubar>ul>li:hover>ul{
+    display: block;
+}
+.menubar ul li ul{
+    background-color: rgba(54, 132, 196);
+    display: none;
+}
+.menubar ul li ul li a:hover{
+    color: white;
+}
+/* .container>header>.inner>form>a{
+    display: flex;
+    justify-content: center;
+}
+.container>header>.inner>form>a>img{
+    width: 120px;
+    height: 100px;
+}
+.container>header>.inner>form>nav{
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #0f426c;
+}
+.container>header>.inner>form>nav>#menuBar{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0;
+}
+.container>header>.inner>form>nav>#menuBar>li{
+    margin: 0 24px;
+    width: 240px;
+    text-align: center;
+}
+.container>header>.inner>form>nav>#menuBar>li>a{
+    font-size: 20px;
+    text-decoration-line: none;
+    line-height: 80px;
+    color: white;
+    font-family: 'NanumSquareEB';
+}
+.container>header>.inner>form>nav>#menuBar>li>.menu>.menuLine{
+    height: 0;
+    overflow: hidden;
+    border-bottom: 15px solid rgba(0, 0, 0, 0.580);
+    border-radius: 20px;
+} */
+/* hover 메뉴바 아래로 내려오게
+.container>header>.inner>form>nav>#menuBar>li:first-child>.menu>.menuLine:hover{
+    background-color: #0f426c;
+    width: 100%;
+    height: 300px;
+    transition: 0.8s;
+}
+.container>header>.inner>form>nav>#menuBar>li:nth-child(2)>.menu>.menuLine:hover{
+    background-color: #0f426c;
+    width: 100%;
+    height: 70px;
+    transition: 0.8s;
+}
+.container>header>.inner>form>nav>#menuBar>li:nth-child(3)>.menu>.menuLine:hover{
+    background-color: #0f426c;
+    width: 100%;
+    height: 70px;
+    transition: 0.8s;
+}
+.container>header>.inner>form>nav>#menuBar>li:last-child>.menu>.menuLine:hover{
+    background-color: #0f426c;
+    width: 100%;
+    height: 180px;
+    transition: 0.8s;
+}
+.container>header>.inner>form>nav>#menuBar>li>.menu>ul>li{
+    padding: 20px 0;
+}
+.container>header>.inner>form>nav>#menuBar>li>.menu>ul>li>a{
+    font-size: 17px;
+    color: white;
+    font-family: 'NanumSquareB';
+}
+.container>header>.inner>form>nav>#menuBar>li>.menu>ul>li>a:hover{
+    color: #3E9AE5;
+} */

@@ -1,0 +1,385 @@
+body{
+  width: 100%;
+  font-family: NanumSquareRoundR;
+  min-width: 1900px;
+}
+.wrapper{
+  position: relative;
+}
+.menu{
+  height: 80px;
+  background-color: antiquewhite;
+}
+/* 상단 */
+/* 결제, 전체선택 창 */
+.top1{
+  width: 75%;
+  height: 850px;
+  margin: 80px 0 0 12%;
+}
+.mid1{
+  /* background-color: aquamarine; */
+  width: 70%;
+  height: 120px;
+  position: relative;
+}
+.mid1 .payment{
+  font-family: NanumSquareEB;
+  font-size: 30px;
+  padding: 20px 20px;
+}
+.mid1 .check_box{
+  padding-top: 10px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.mid1 .check_box .checkAll{
+  display: none;
+}
+.checkAll_label{
+  display: flex;
+  align-items: center;
+  width: 90px;
+  /* background-color: yellow; */
+}
+.checkAll_icon::before{
+  content: '';
+  display: block;
+  margin-right: 5px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 1px solid rgb(158, 158, 158);
+  border-radius: 3px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+}
+.checkAll_label input:checked + .checkAll_icon::before{
+  background: url(https://intranet.adef.co.kr/asset/images/ic_check.png) #3e9ae5
+  no-repeat center;;
+  border: none;
+}
+.checkAll_text{
+  margin-top: -4px;
+}
+
+.checkObj{
+  display: none;
+}
+.checkObj_icon::before{
+  content: '';
+  display: block;
+  margin-right: 5px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 20px 0 0 15px;
+  background-color: white;
+  border: 1px solid rgb(158, 158, 158);
+  border-radius: 3px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+}
+.checkObj_label input:checked + .checkObj_icon::before{
+  background: url(https://intranet.adef.co.kr/asset/images/ic_check.png) #3e9ae5
+  no-repeat center;;
+  border: none;
+}
+.mid1 .check_box .delete{
+  font-family: NanumSquareRoundR;
+  padding: 12px 12px;
+  font-size: 15px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: white;
+  border: 0.2px solid gainsboro;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+}
+.mid1 hr{
+  margin-top: 15px;
+  border: 1px solid rgba(220, 220, 220,0.25);
+  width: 100%;
+}
+img{
+  box-shadow: 2px 2px 2px gainsboro;
+}
+.mid2{
+  /* background-color: yellow; */
+  width: 70%;
+  height: 750px;
+  position: relative;
+}
+.mid2 .course{
+  /* background-color: beige; */
+  width: 85%;
+  height: 130px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  display: flex;
+  position: relative;
+}
+
+.mid2 .course .sub_name{
+  font-family: NanumSquareRoundB;
+  font-size: 19px;
+}
+.mid2 .course img{
+  width: 130px;
+  height: 85px;
+  border-radius: 10px 10px;
+  margin: 20px 0 0 10px;
+}
+.mid2 .course .text_b{
+  margin: 35px 10px;
+  font-size: 17px;
+}
+.mid2 .course .bt{
+  padding-top: 20px;
+  font-size: 15px;
+}
+.mid2 .course .bt .pro_name{
+  color: rgb(66, 66, 66);
+}
+.mid2 .course .bt .sub_pri {
+  color: #3e9ae5;
+  padding-left: 10px;
+}
+
+.line{
+  width: 1px;
+  height: 110px;
+  background-color: rgb(158, 158, 158,0.3);
+  position: absolute;
+  right: 20px;
+  top: 7px;
+}
+.opacity{
+  background-color: white;
+  width: 930px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+}
+.mid2 hr{
+  margin-top: 15px;
+  border: 1px solid rgba(220, 220, 220,0.25);
+  width: 100%;
+}
+.mid2 .price{
+  /* background-color: burlywood; */
+  width: 15%;
+  height: 130px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-family: NanumSquareB;
+  font-size: 18px;
+  text-align: right;
+}
+.mid2 .price .price_text{
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.mid2 .price .ratio{
+  color: rgb(212, 2, 2);
+  font-size: 15px;
+}
+.mid2 .price .won_price{
+  color: rgb(158, 158, 158);
+  font-size: 15px;
+}
+.mid2 .price .total_price{
+  font-family: NanumSquareEB;
+  font-size: 25px;
+  display: flex;
+  padding-left: 28px;
+  padding-top: 7px;
+}
+.mid2 .price .won{
+  font-size: 18px;
+  position: absolute;
+  right: 18px;
+  top: 49.5px;
+}
+.mid2 .course .x{
+  background-image: url(../image/x_icon.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  opacity: 0.3;
+}
+.price2{
+  /* background-color: yellow; */
+  margin-top: 150px;
+}
+.price3{
+  margin-top: 300px;
+  position: relative;
+}
+.price3 .won{
+  margin-top: -17px;
+}
+/* 결제창 */
+.side{
+  /* background-color: pink; */
+  margin-top: 70px;
+  width: 22%;
+  height: 680px;
+  position: absolute;
+  top: 88px;
+  right: 11%;
+  text-align: left;
+}
+.side1 {
+  margin: 10px 10px;
+  padding: 20px 20px;
+  border: 1px solid gainsboro;
+  border-radius: 10px 10px 10px 10px;
+}
+.side1 .cus_info{
+  font-family: NanumSquareRoundEB;
+  color: rgb(32, 32, 32);
+}
+.side1 .info_box{
+  margin-left: 5px;
+}
+.side1 .info_box input{
+  padding: 8px 8px;
+  font-family: NanumSquareRoundR;
+  color: rgb(158, 158, 158);
+  width: 90%;
+  height: 30px;
+  border: 1px solid gainsboro;
+  border-radius: 5px 5px;
+}
+.side1 .info_box .cus_i{
+  padding-left: 14px;
+}
+.side1 .info_box input:nth-of-type(1),input:nth-of-type(2){
+  margin-bottom: 10px;
+}
+.side1 .info_box div{
+  font-size: 17px;
+  padding: 10px 0 5px 0;
+  color: rgb(66, 66, 66);
+  margin-bottom: 5px;
+}
+.side1 hr{
+  margin-top: 15px;
+  border: 1px solid rgba(220, 220, 220,0.25);
+}
+
+.side2{
+  margin: 10px 10px;
+  padding: 20px 20px;
+  border: 1px solid gainsboro;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 17px;
+}
+.side2 .pay_info{
+  font-family: NanumSquareRoundEB;
+  color: rgb(32, 32, 32);
+}
+.cus_i{
+  outline: none;
+}
+.side2 ul li{
+  display: flex;
+  padding-top: 10px;
+}
+.side2 ul li:nth-of-type(1){
+  color: rgb(66, 66, 66);
+}
+.side2 ul li:nth-of-type(2) {
+  padding-top: 20px;
+  color: rgb(212, 2, 2);
+}
+.side2 ul li:nth-of-type(3) {
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: NanumSquareRoundB;
+}
+.side2 ul span{
+  float: right;
+  margin-top: -18px;
+}
+.side2 ul span:nth-of-type(1){
+  color: rgb(66, 66, 66);
+}
+.side2 ul span:nth-of-type(2){
+  color: rgb(212, 2, 2);
+}
+.side2 ul span:nth-of-type(3){
+  font-family: NanumSquareRoundB;
+  font-size: 20px;
+}
+.side2 .pay_bottom{
+  margin-top: 30px;
+}
+.side2 .pay_bottom .pay{
+  font-family: NanumSquareRoundEB;
+  border-radius: 10px 10px;
+  border: none;
+  background-color: #3e9ae5;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  line-height: 50px;
+  font-size: 20px;
+  color: snow;
+}
+.side2 .pay_bottom p{
+  font-size: 13px;
+  color: rgb(158, 158, 158);
+}
+.side2 .pay_bottom .extra_1{
+  margin-top: 20px;
+  padding-bottom: 7px;
+}
+.side2 hr{
+  margin-top: 15px;
+  border: 1px solid rgba(220, 220, 220,0.25);
+}
+.star::after{
+  content: "*";
+  color: rgb(212, 2, 2);
+  position: relative;
+  margin-left: 2px;
+}
+/* js 이후 css */
+.failN, .failE, .failP{
+  font-size: 12px;
+  color: rgb(212, 2, 2);
+  display: flex;
+  margin-top: -3px;
+  padding-bottom:10px;
+}
+.failP{
+  margin-top: 6px;
+}
+/* 로고 색상코드
+어두운파랑 - #0f426c
+밝은파랑 - #3e9ae5 */
+/* 
+.cour1{
+  display: none;
+}
+.cour2{
+  display: none;
+}
+.cour3{
+  display: none;
+} */

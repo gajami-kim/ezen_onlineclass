@@ -1,0 +1,228 @@
+body {
+    width: 100%;
+    background-position: center;
+    margin: 0px;
+    padding: 0px;
+    /* position: relative; */
+}
+
+header {
+    width: 100%;
+    /* height: 80px; */
+    /* margin: 0px; */
+}
+
+.all{
+    top: 50%;
+    left: 30%;
+    transform: translate(-50% 0)
+}
+
+/* container 1부분 시작 */
+.container1 {
+    margin-top: 120px;
+    height: 600px;
+    width: 100%;
+    margin-left: 350px;
+  
+}
+.container1 .main2 tr td{
+    cursor: pointer;
+}
+.faq{
+    cursor: pointer;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+ .all .container1 .main2 tr td{
+    
+    color: rgb(47, 46, 46);
+
+}
+.all .container1 .main2 tr th{
+  height: 50px;
+  width: 40px;
+}
+.container1 .main2 tr td:nth-child(1) {
+    background-color: azure;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    
+   
+}
+
+.container1 .main2 tr td:nth-child(2) {
+    background-color: azure;
+    width: 800px;
+    text-align: left;
+    padding-left: 20px;
+
+}
+
+.container1 .main2 tr td:nth-child(3) {
+    background-color: azure;
+    width: 200px;
+    text-align: center;
+}
+
+.container1 .main2 tr td:nth-child(4) {
+    background-color: azure;
+    width: 200px;
+    text-align: center;
+}
+.all .container1 .main2 tr td.no {
+   background-color: white;
+    
+}
+
+
+.container1 .faq {
+    margin-top: 10px; /* FAQ 섹션의 상단 마진을 10px로 설정 */
+   
+}
+.container1 .faq th,
+.container1 .faq td {
+    border: 1px solid black;
+    text-align: left;
+    /* width: 100px; 각 셀의 너비를 200px로 설정 */
+    height: 50px;
+   
+   
+}
+
+.container1 .faq th {
+    background-color: aqua;
+    width: 200px;
+}
+
+.container1 .faq td {
+    /* width: 200px; */
+}
+.container1 .faq tr .hi:first-child {
+    width: 100px; 
+    height: 45px; 
+    text-align: center; 
+    /* padding-top: 5px; 
+    padding-bottom: 5px;  */
+    
+    background-color: azure;
+}
+.container1 .faq tr td:nth-child(2) {
+    background-color: white;
+    padding-left: 20px;
+}
+
+
+/* container 1부분 끝 */
+
+/* container 2부분 시작 */
+.container2 {
+    width: 220px;
+    margin-left: 120px;
+    float: left; /* 좌측으로 부유시킴 */
+    margin-top: 75px;
+    
+}
+
+ 
+
+.container2 > .left > table tr td button {
+    border: 1px solid gray;
+    background-color: white;
+    border: none;
+    width: 200px;
+    height: 50px;
+    /* border: none; */
+    font-size: 20px;
+    font-weight: 700;
+    margin: none;
+}
+.container2 .left table tr td button{
+    cursor: pointer;
+}
+footer {
+    
+    width: 100%;
+    height: 80px;
+}
+
+/* 테이블 줄을 한 줄로 보이게 설정 */
+
+.main2 {
+    border-collapse: collapse;
+    
+}
+.left table {
+    /* border-collapse: collapse;  */
+}
+.faq {
+    border-collapse: collapse;
+}
+
+
+
+/* container 2부분 끝 */
+
+.button1{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 20px;
+    margin-bottom: 10px;
+
+}
+.button1{
+    cursor: pointer;
+}
+.button1 {
+    margin-top: 10px; /* 버튼을 아래로 내리는 스타일 추가 */
+    display: block; /* 버튼을 블록 레벨 요소로 설정하여 줄 바꿈이 되도록 합니다. */
+}
+.button1{
+    height: 45px;
+    border: 2px solid rgb(234, 234, 234); 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #3e9ae5;
+    color: white;
+    font-family: 'NanumSquareB'; 
+}
+
+.button1:hover{
+    background-color: #0f426c;
+}
+.container2 > .left > table {
+    border-collapse: collapse; 
+}
+.container2 > .left > table {
+    border: 2px solid #EAEAEA; 
+}
+.main2, .faq {
+    border: 2px solid rgb(234, 234, 234); 
+}
+.container1 .faq {
+    width: 1332.09px; 
+}
+.container1 .faq td {
+    border: 2px solid rgb(234, 234, 234);
+}
+#main, #faq, #user, #question {
+    color: black; /* 버튼의 기본 글자색 */
+}
+
+#main:focus, #faq:focus, #user:focus, #question:focus {
+    color: white; /* 버튼이 클릭되었을 때의 글자색 */
+}
+.container1 .main2 tr td.no {
+    background-color: lightblue; /* 원하는 배경색으로 변경하세요 */
+}
+textarea{
+    font-size: 1.5em;
+    outline: none;
+}

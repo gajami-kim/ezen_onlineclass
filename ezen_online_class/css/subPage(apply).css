@@ -1,0 +1,139 @@
+
+/* 버튼 & 수강신청 라인 */
+.pgcontain .pgc_div .apply_div{
+    background-color: rgb(255, 255, 255);
+    /* height: 35%; */
+    /* height: 1000px; */
+}
+.pgcontain .pgc_div .apply_div .apply_group{
+    margin: 30px;
+    position: sticky;
+    top :35px;
+}
+.pgcontain .pgc_div .apply_div .apply_group .apply_btn button{
+    width: 90px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: #3e9ae5;
+    color: white;
+    font-family: 'NanumSquareR';
+    font-size: 1em;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgb(162, 162, 162);
+}
+
+.pgcontain .pgc_div .apply_div
+.apply_group .apply_btn button:nth-of-type(1){
+    font-family: 'NanumSquareEB';
+}
+.pgcontain .pgc_div .apply_div
+.apply_group .apply_btn button:nth-of-type(2),
+.pgcontain .pgc_div .apply_div
+.apply_group .apply_btn button:nth-of-type(3){
+    background-color: #0f426c;
+}
+.pgcontain .pgc_div
+.apply_div .apply_group
+.apply {
+    width: 335px;
+    height: 410px;
+    /* background-color: antiquewhite; */
+    border: 0.5px solid rgb(214, 214, 214);
+    margin-top: 20px;
+    box-shadow: 0px 0px 2px rgb(199, 199, 199);
+    border-radius: 10px;
+}
+.pgcontain .pgc_div
+.apply_div .apply_group
+.apply .apply_inner{
+    padding: 30px;
+    line-height: 2;
+}
+.pgcontain .pgc_div .apply_div
+.apply_group .apply .apply_inner
+.apply_inner_price{
+    font-size: 25px;
+    font-family: 'NanumSquareEB';
+}
+.pgcontain .pgc_div .apply_div
+.apply_group .apply .apply_inner
+.apply_inner_price span:first-child{
+    color: white;
+    background-color: rgb(206, 5, 5);
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 20px;
+}
+.pgcontain .pgc_div .apply_div
+.apply_group .apply .apply_inner
+.apply_inner_price span:last-child del{
+    color: rgb(194, 194, 194);
+    font-size: 22px;
+    font-family: 'NanumSquareR';
+}
+.pgcontain .pgc_div .apply_div
+.apply_group .apply .apply_inner
+button{
+    width: 265px;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #3e9ae5;
+    color: white;
+    font-family: 'NanumSquareB';
+    font-size: 16px;
+    cursor: pointer;
+}
+.pgcontain .pgc_div .apply_div
+.apply_group .apply .apply_inner
+button:hover{
+    background-color: #0f426c;
+}
+.pgcontain .pgc_div .apply_div
+.apply_group .apply .apply_inner 
+.apply_inner_share{
+    /* background-color: aliceblue; */
+    width: 260px;
+    height: 30px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.pgcontain .pgc_div .apply_div
+.apply_group .apply .apply_inner 
+.apply_inner_share svg{
+    margin-right: 10px;
+    top: 7px;
+}
+.pgcontain .pgc_div .apply_div
+.apply_group .apply .apply_inner ul{
+    margin-top: 20px;
+    width: 260px;
+    height: 200px;
+    border: 1px solid black;
+    line-height: 1.4;
+}
+.pgcontain .pgc_div .apply_div
+.apply_group .apply .apply_inner_bt{
+    background-color: rgba(237, 237, 237, 0.489);
+    height: 160px;
+    padding: 25px 20px 20px;
+    line-height: 1.5;
+}
+.pgcontain .pgc_div .apply_div
+.apply_group .apply .apply_inner_bt ul li{
+    list-style:inside;
+}
+.pgcontain .pgc_div .apply_div
+.apply_group .apply .apply_inner_bt p{
+    margin-top: 18px;
+    background-color: #3e9ae514;
+    height: 35px;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 35px;
+    font-family: 'NanumSquareB';
+}

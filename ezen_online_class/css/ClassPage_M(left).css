@@ -1,0 +1,82 @@
+body{
+    width: 100%;
+}
+
+.contain{
+    /* background-color: azure; */
+    min-width: 1900px;
+    margin-bottom: 200px;
+}
+.colum{
+    width: 75%;
+    height: 1300px;
+    /* background-color: rgb(120, 85, 85); */
+    margin: 0 auto;
+    font-family: 'NanumSquareR';
+}
+.categoriebody{
+    width: 20%;
+    /* height: 1000px; */
+    /* background-color: rgb(150, 150, 150); */
+    float: left;
+    margin-top: 140px;
+}
+.classbody{
+    float: right;
+    width: 80%;
+    margin-top: 140px;
+    /* height: 100%; */
+    /* background-color: blanchedalmond; */
+}
+.catediv{
+    width: 70%;
+    height: 300px;
+    margin: 30px auto 0;
+    background-color: rgba(239, 239, 239, 0.173);
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+.catediv a:hover{
+    color: #3e9ae5;
+    font-weight: 700;
+}
+.cate_full, .cate_program, .cate_food
+,.cate_design, .cate_fund{
+    height: 50px;
+    /* background-color: aquamarine; */
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+.catediv span{
+    float: right;
+    line-height: 60px;
+    position: absolute;
+    left: 350px;
+    line-height: 50px;
+}
+svg{
+    float: left;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 310px;
+}
+.bi-grid{
+    top: 185px;
+}
+.bi-pc-display-horizontal{
+    top: 235px;
+    width: 23px;
+    height: 23px;
+}
+.bi-cake-fill{
+    top: 285px;
+}
+.bi-vector-pen{
+    top: 336px;
+}
+.bi-currency-dollar{
+    top: 387px;
+}
+.bi-bookmark-heart{
+    top: 436px;
+}

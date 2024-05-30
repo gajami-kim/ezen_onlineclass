@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassPage</title>
+    <link rel="stylesheet" href="../css/ClassPage_M(left).css">
+    <link rel="stylesheet" href="../css/ClassPage_M(rigth).css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/ClassPage_M_header.css">
+    <link rel="stylesheet" href="../css/ClassPage_M_main.css">
+
+    
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+</head>
+<body>
+    <!-- 메뉴고정 -->
+    <div class="menu">
+        <header>
+            <div class="inner">
+                <form action="">
+                    <nav>
+                    <div class="top">
+                        <div class="top_part">
+                            <a href="../html/main.html">
+                                <div class="logo_img"></div>
+                            </a>
+                            <div class="search_part">
+                                <img src="../image/search_icon.png" alt="" width="13px" height="13px">
+                                <input type="text" class="search_bar" placeholder="찾고싶은 강의를 입력하세요">
+                            </div>
+                            <div class="inner sectionBox1">
+                                <button type="button" id="mypageBtn"><a href="../html/mypage.html">마이페이지</a></button>
+                                <button type="button" id="loginBtn"><a href="../html/login.html">로 그 인</a></button>
+                                <button type="button" id="joinBtn"><a href="../html/signup.html">회원가입</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 메뉴바 -->
+                        <div class="menubar">
+                            <ul>
+                                <li class="cate">
+                                    <li class="big dot">.     </li>
+                                    <div class="cate_text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                        </svg>
+                                        <div class="textcate">카테고리</div>
+                                    </div>
+                                </li>
+                            <li class="big"><a href="../html/ClassPage_M.html">강    의</a>
+                                <ul>
+                                    <li><a href="">개발 · 프로그래밍</a></li>
+                                    <li><a href="">요리 · 음료</a></li>
+                                    <li><a href="">디자인</a></li>
+                                    <li><a href="">금융 · 재테크</a></li>
+                                    <li><a href="">뷰티</a></li>
+                                </ul>
+                            </li>
+                            <li class="big"><a href="../html/teacherCard.html">강 사 진</a>
+                                <ul>
+                                    <li><a href="../html/teacherCard.html">강사소개</a></li>
+                                </ul>
+                            </li>
+                            <li class="big"><a href="../html/infromation.html">상담신청</a>
+                                <ul>
+                                    <li><a href="../html/infromation.html">10초 안내받기</a></li>
+                                </ul>
+                            </li>
+                            <li class="big"><a href="../html/faq.html">공지사항</a>
+                                <ul>
+                                    <li><a href="../html/faq.html">FAQ</a></li>
+                                    <li><a href="../html/faq.html">이용문의</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            </form>
+            </div>
+        </header>
+    </div>
+    <!-- 강의 페이지 메인 -->
+    <div class="contain">
+        <div class="colum">
+            <!-- 왼쪽 메뉴 카테고리 -->
+            <div class="categoriebody">
+                <div class="catediv">
+                    <div class="cate_full">
+                        <a href="../html/ClassPage_M.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+                                <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
+                              </svg>
+                            <span>전체강의</span>
+                        </a>
+                    </div>
+                    <div class="cate_program">
+                        <a href="../html/ClassPage_M.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                                <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5M12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0m2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0M1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1M1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25"/>
+                              </svg>
+                            <span>개발·프로그래밍</span>    
+                        </a>
+                    </div>
+                    <div class="cate_food">
+                        <a href="../html/ClassPage_M.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cake-fill" viewBox="0 0 16 16">
+                                <path d="m7.399.804.595-.792.598.79A.747.747 0 0 1 8.5 1.806V4H11a2 2 0 0 1 2 2v3h1a2 2 0 0 1 2 2v4a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-4a2 2 0 0 1 2-2h1V6a2 2 0 0 1 2-2h2.5V1.813a.747.747 0 0 1-.101-1.01ZM12 6.414a.9.9 0 0 1-.646-.268 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0A.9.9 0 0 1 4 6.414v1c.49 0 .98-.187 1.354-.56a.914.914 0 0 1 1.292 0c.748.747 1.96.747 2.708 0a.914.914 0 0 1 1.292 0c.374.373.864.56 1.354.56zm2.646 5.732a.914.914 0 0 1-1.293 0 1.914 1.914 0 0 0-2.707 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0L1 11.793v1.34c.737.452 1.715.36 2.354-.28a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.708 0a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.707 0a.914.914 0 0 1 1.293 0 1.915 1.915 0 0 0 2.354.28v-1.34z"/>
+                              </svg>
+                            <span>요리·음료</span>
+                        </a>
+                    </div>
+                    <div class="cate_design">
+                        <a href="../html/ClassPage_M.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-vector-pen" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.646.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 0 1 0 .708l-1.902 1.902-.829 3.313a1.5 1.5 0 0 1-1.024 1.073L1.254 14.746 4.358 4.4A1.5 1.5 0 0 1 5.43 3.377l3.313-.828zm-1.8 2.908-3.173.793a.5.5 0 0 0-.358.342l-2.57 8.565 8.567-2.57a.5.5 0 0 0 .34-.357l.794-3.174-3.6-3.6z"/>
+                                <path fill-rule="evenodd" d="M2.832 13.228 8 9a1 1 0 1 0-1-1l-4.228 5.168-.026.086z"/>
+                            </svg>
+                            <span>디자인</span>
+                        </a>
+                    </div>
+                    <div class="cate_fund">
+                        <a href="../html/ClassPage_M.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                                <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
+                              </svg>
+                            <span>금융·재테크</span>
+                        </a>
+                    </div>
+                    <div class="cate_diy">
+                        <a href="../html/ClassPage_M.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                              </svg>
+                            <span>뷰티</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 오른 쪽 강의 List -->
+            <div class="classbody">
+                <div class="classcontain_total">
+                    <h1>전체 강의 List</h1>
+                    <div class="adiv_group">
+                        <div class="adiv ad1">
+                            <a href="../html/subPage.html">
+                                <img src="../image/spring_core_basic.png" alt="">
+                                <p class="sale">30% 할인</p>
+                                <div class="text">
+                                    <div class="hdiv">
+                                        <h3>스프링 핵심 원리 - 기본편</h3>
+                                    </div>
+                                    <div>
+                                        <p>김영한</p>
+                                        <p>★★★★★</p>
+                                        <p class="price"><del>88,000</del> ￦ 61,600</p>
+                                        <!-- <link rel="stylesheet" href="/1조_이젠온라인클래스/icon/별(검).svg"> -->
+                                    </div>
+                                    <div class="spandiv">
+                                        <span>+32,500명</span>
+                                        <span class="sale2">할인중</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="adiv_hover">
+                                <a href="../html/subPage.html">
+                                    <div class="textT">
+                                        <p>스프링 핵심 원리 - 기본편</p>
+                                        <p>
+                                            스프링 입문자가 예제를 만들어가면서 스프링의 핵심 원리를 이해하고,
+                                            스프링기본기를 확실히 다질 수 있습니다.
+                                        </p>
+                                        <div class="icon">
+                                            <img src="../icon/안테나.svg" alt="">
+                                            <span>초급</span> <br>
+                                            <img src="../icon/기술.svg" alt="">
+                                            <span>백엔드, 웹 개발</span> <br>
+                                            <img src="../icon/블럭.svg" alt="">
+                                            <span>Spring, 객체지향</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="adiv ad2">
+                            <a href="../html/subPage2.html">
+                                <img src="../image/Java_basic.png" alt="">
+                                <p class="sale">30% 할인</p>
+                                <div class="text">
+                                    <div class="hdiv">
+                                        <h3>김영한의 실전 자바 - 기본편</h3>
+                                    </div>
+                                    <div>
+                                        <p>김영한</p>
+                                        <p>★★★★★</p>
+                                        <p class="price"><del>44,000</del> ￦ 30,800</p>
+                                    </div>
+                                    <div class="spandiv">
+                                        <span>+7,700명</span>
+                                        <span class="update">업데이트</span>
+                                        <span class="sale2">할인중</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="adiv_hover">
+                                <a href="../html/subPage2.html">
+                                    <div class="textT">
+                                        <p>김영한의 실전자바 - 기본편 </p>
+                                        <p>
+                                            실무에 필요한 자바 객체 지향의 핵심 개념을 예제 코드를 통해 쉽게 학습합니다. <br><br>
+                                        </p>
+                                        <div class="icon">
+                                            <img src="../icon/안테나.svg" alt="">
+                                            <span>초급</span> <br>
+                                            <img src="../icon/기술.svg" alt="">
+                                            <span>프로그래밍 언어, 웹 개발, 백엔드</span> <br>
+                                            <img src="../icon/블럭.svg" alt="">
+                                            <span>Java, 객체지향</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="adiv ad3">
+                            <a href="../html/subPage3.html">
+                                <img src="../image/cake.webp" alt="">
+                                <!-- <img src="../image/Java_Algorithm.png" alt=""> -->
+                                <div class="text">
+                                    <div class="hdiv">
+                                        <h3>소소하게 쌀케이크 11종</h3>
+                                        <!-- <h3>자바(Java) 알고리즘 문제풀이 입문 : 코딩테스트 대비</h3> -->
+                                    </div>
+                                    <div>
+                                        <p>김성미</p>
+                                        <p>★★★★★</p>
+                                        <p class="price">￦ 236,000</p>
+                                        <!-- <p>김태원</p>
+                                        <p>★★★★★</p>
+                                        <p class="price">￦ 77,800</p> -->
+                                    </div>
+                                    <div class="spandiv">
+                                        <span>+6,500명</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="adiv_hover">
+                                <a href="../html/subPage3.html">
+                                    <div class="textT">
+                                        <p>소소하게 쌀케이크 11종 </p>
+                                        <!-- <p>자바(Java) 알고리즘 문제풀이 : 코딩테스트 대비 </p> -->
+                                        <p>
+                                            담백한 맛과 부드러운 식감이 돋보이는 나만의 쌀케이크를 완성해보세요<br><br>
+                                        </p>
+                                        <!-- <p>
+                                            자바(Java)로 코딩테스트를 준비하시는 분을 위한 강좌입니다.   <br>
+                                        </p> -->
+                                        <div class="icon">
+                                            <img src="../icon/안테나.svg" alt="">
+                                            <span>중급</span> <br>
+                                            <img src="../icon/기술.svg" alt="">
+                                            <span>베이커리, 쌀케이크</span> <br>
+                                            <img src="../icon/블럭.svg" alt="">
+                                            <span>쌀베이킹, 설기케이크, 보틀케이크</span>
+                                            <!-- <img src="../icon/안테나.svg" alt="">
+                                            <span>입문</span> <br>
+                                            <img src="../icon/기술.svg" alt="">
+                                            <span>알고리즘·자료구조, 프로그래밍</span> <br>
+                                            <img src="../icon/블럭.svg" alt="">
+                                            <span>Java, 코딩 테스트</span> -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="adiv ad4">
+                            <a href="../html/subPage4.html">
+                                <img src="../image/프론트엔지니어.png" alt="">
+                                <!-- <img src="../image/MySQL_DB.png" alt=""> -->
+                                <div class="text">
+                                    <div class="hdiv">
+                                        <h3>프론트엔드 엔지니어를 위한 문제 해결법</h3>
+                                        <!-- <h3>처음하는 SQL과 데이터베이스 부트캠프</h3> -->
+                                    </div>
+                                    <div>
+                                        <p>조유성, 하태영, 배휘동</p>
+                                        <p>★★★★</p>
+                                        <p class="price">￦ 32,000</p>
+                                        <!-- <p>김태원</p>
+                                        <p>★★★★★</p>
+                                        <p class="price">￦ 77,800</p> -->
+                                    </div>
+                                    <div class="spandiv">
+                                        <span>+3,100명</span>
+                                        <span class="update">업데이트</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="adiv_hover">
+                                <a href="../html/subPage4.html">
+                                    <div class="textT">
+                                        <p>프론트엔드 엔지니어를 위한 문제 해결법 </p>
+                                        <p>
+                                            실무에서 바로 쓸 수 있는 노하우를 담은 강의를 만나볼 수 있습니다.
+                                        </p>
+                                        <!-- <p>SQL과 데이터베이스 부트캠프 </p>
+                                        <p>
+                                            이 강의를 통해 데이터베이스 설계, 데이터베이스 활용, 데이터 분석 활용 사례까지 익힐 수 있습니다.
+                                        </p> -->
+                                        <div class="icon">
+                                            <img src="../icon/안테나.svg" alt="">
+                                            <span>입문~중급</span>
+                                            <img src="../icon/기술.svg" alt="">
+                                            <span>디버깅, React, 프로그래밍</span> <br>
+                                            <img src="../icon/블럭.svg" alt="">
+                                            <span>React, 프론트엔드</span>
+                                            <!-- <img src="../icon/안테나.svg" alt="">
+                                            <span>초급</span>
+                                            <img src="../icon/기술.svg" alt="">
+                                            <span>데이터베이스, 데이터 분석</span> <br>
+                                            <img src="../icon/블럭.svg" alt="">
+                                            <span>Python, SQL, MySQL</span> -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="adiv ad5">
+                            <a href="">
+                                <img src="../image/JavaScript_ES6.jpg" alt="">
+                                <div class="text">
+                                    <div class="hdiv">
+                                        <h3>함수형 프로그래밍과 JavaScript ES6+</h3>
+                                    </div>
+                                    <div>
+                                        <p>유인동</p>
+                                        <p>★★★★★</p>
+                                        <p class="price">￦ 55,000</p>
+                                    </div>
+                                    <div class="spandiv">
+                                        <span>+5,000명</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="adiv_hover">
+                                <a href="">
+                                    <div class="textT">
+                                        <p>함수형 프로그래밍과 JavaScript ES6+</p>
+                                        <p>
+                                            ES6+의 이터러블/이테레이터/제너레이터 프로토콜을 상세히 다루고 응용합니다.
+                                        </p>
+                                        <div class="icon">
+                                            <img src="../icon/안테나.svg" alt="">
+                                            <span>초급</span>
+                                            <img src="../icon/기술.svg" alt="">
+                                            <span>프로그래밍 언어, 웹개발, 프론트</span> <br>
+                                            <img src="../icon/블럭.svg" alt="">
+                                            <span>JavaScript, 함수형 프로그래밍</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="adiv ad6">
+                            <a href="">
+                                <img src="../image/HTTP.png" alt="">
+                                <p class="sale">30% 할인</p>
+                                <div class="text">
+                                    <div class="hdiv">
+                                        <h3>모든 개발자를 위한 HTTP 웹 기반 지식</h3>
+                                    </div>
+                                    <div>
+                                        <p>김영한</p>
+                                        <p>★★★★★</p>
+                                        <p class="price"><del>44,000</del> ￦ 30,800</p>
+                                    </div>
+                                    <div class="spandiv">
+                                        <span>+5,000명</span>
+                                        <span class="sale2">할인중</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="adiv_hover">
+                                <a href="">
+                                    <div class="textT">
+                                        <p>모든 개발자를 위한 HTTP 웹 기본 지식</p>
+                                        <p>
+                                            실무에 꼭 필요한 HTTP 핵심 기능과 올바른 HTTP API 설계 방법을 학습합니다. 
+                                        </p>
+                                        <div class="icon">
+                                            <img src="../icon/안테나.svg" alt="">
+                                            <span>초급</span>
+                                            <img src="../icon/기술.svg" alt="">
+                                            <span>웹 개발, 네트워크, 기타(개발)</span> <br>
+                                            <img src="../icon/블럭.svg" alt="">
+                                            <span>네트워크</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="adiv ad7">
+                            <a href="">
+                                <img src="../image/FigmaAppPlanning.png" alt="">
+                                <div class="text">
+                                    <div class="hdiv">
+                                        <h3>웹 기획의 새로운 방식, Figma!</h3>
+                                    </div>
+                                    <div>
+                                        <p>웹타이탄</p>
+                                        <p>★★★★</p>
+                                        <p class="price"> ￦ 119,000</p>
+                                    </div>
+                                    <div class="spandiv">
+                                        <span>+200명</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="adiv_hover">
+                                <a href="">
+                                    <div class="textT">
+                                        <p>웹 기획의 새로운 방식, Figma!</p>
+                                        <p>
+                                            앱 서비스 기획 경험이 없어 막막한 스타트업 대표, 기획을 체계적으로 배우고 싶은 실무자
+                                        </p>
+                                        <div class="icon">
+                                            <img src="../icon/안테나.svg" alt="">
+                                            <span>입문</span>
+                                            <img src="../icon/기술.svg" alt="">
+                                            <span>기획, 전략, PM, UX/UI</span> <br>
+                                            <img src="../icon/블럭.svg" alt="">
+                                            <span>Figma, 서비스 기획</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="adiv ad8">
+                            <a href="">
+                                <img src="../image/Dseign_System.png" alt="">
+                                <div class="text">
+                                    <div class="hdiv">
+                                        <h3>피그마 배리어블을 활용한 디자인 시스템 구축하기</h3>
+                                    </div>
+                                    <div>
+                                        <p>김영한</p>
+                                        <p>★★★★★</p>
+                                        <p class="price"><del>44,000</del> ￦ 30,800</p>
+                                    </div>
+                                    <div class="spandiv">
+                                        <span>+500명</span>
+                                        <span class="update">업데이트</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="adiv_hover">
+                                <a href="">
+                                    <div class="textT">
+                                        <p>피그마 배리어블을 활용한 디자인 시스템 구축하기</p>
+                                        <p>
+                                            피그마의 배리어블을 활용하여 함께 디자인 시스템을 만들어보세요!
+                                        </p>
+                                        <div class="icon">
+                                            <img src="../icon/안테나.svg" alt="">
+                                            <span>초급</span>
+                                            <img src="../icon/기술.svg" alt="">
+                                            <span>UX/UI, 기타(비즈니스, 마케팅)</span> <br>
+                                            <img src="../icon/블럭.svg" alt="">
+                                            <span>Figma variable, Fimga, Figma Tokens</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 위까지 8개 강의 list adiv_group 끝 -->
+                    <!-- 더보기 눌렀을 때 보여지는 강의 list -->
+                    <div class="adiv_group ems2">
+                        <div class="adiv">
+                            <a href="">
+                                <img src="../image/BlockChain.jpg" alt="">
+                                <div class="text">
+                                    <div class="hdiv">
+                                        <h3>초보자도 쉽게 따라하는 블록체인 프로그래밍</h3>
+                                    </div>
+                                    <div>
+                                        <p>대니월드</p>
+                                        <p>★★★★★</p>
+                                        <p class="price">￦ 99,000</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="adiv_hover">
+                                <a href="">
+                                    <div class="textT">
+                                        <p>초보자도 쉽게 따라하는 블록체인 프로그래밍</p>
+                                        <p>
+                                            블록체인 프로그래밍과 스마트 컨트랙트의 개념을 이해, 활용
+                                        </p>
+                                        <div class="icon">
+                                            <img src="../icon/안테나.svg" alt="">
+                                            <span>입문</span>
+                                            <img src="../icon/기술.svg" alt="">
+                                            <span>블록체인, 프로그래밍 언어, 금융</span> <br>
+                                            <img src="../icon/블럭.svg" alt="">
+                                            <span>블록체인, Ethereum, Solidity</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="adiv">
+                            <a href="">
+                                <img src="../image/PythonBitcoin.jpg" alt="">
+                                <div class="text">
+                                    <div class="hdiv">
+                                        <h3>파이썬으로 구현하는 거래 자동차 봇</h3>
+                                    </div>
+                                    <div>
+                                        <p>Gunhee Lee</p>
+                                        <p>★★★★</p>
+                                        <p class="price">￦ 55,000</p>
+                                    </div>
+                                    <div class="spandiv">
+                                        <span>+200명</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="adiv_hover">
+                                <a href="">
+                                    <div class="textT">
+                                        <p>파이썬으로 구현하는 거래 자동차 봇</p>
+                                        <p>
+                                            수익을 볼 수 있는 로직을 만들어 텔레그램으로 받는 프로그램을 만들 것 입니다.
+                                        </p>
+                                        <div class="icon">
+                                            <img src="../icon/안테나.svg" alt="">
+                                            <span>초급</span>
+                                            <img src="../icon/기술.svg" alt="">
+                                            <span>블록체인, 금융·재테크</span> <br>
+                                            <img src="../icon/블럭.svg" alt="">
+                                            <span>Python, 챗봇</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="adiv">
+                            <a href="">
+                                <img src="../image/로직프로.png" alt="">
+                                <p class="sale">30% 할인</p>
+                                <div class="text">
+                                    <div class="hdiv">
+                                        <h3>[마스터]기본 튼튼 로직프로X강좌</h3>
+                                    </div>
+                                    <div>
+                                        <p>EDUPIC 미디어 강좌</p>
+                                        <p>☆☆☆☆☆</p>
+                                        <p class="price"><del>198,000</del> ￦ 138,600</p>
+                                    </div>
+                                    <div class="spandiv">
+                                        <span class="update">새강의</span>
+                                        <span class="sale2">할인중</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="adiv_hover">
+                                <a href="">
+                                    <div class="textT">
+                                        <p>[마스터]기본 튼튼 로직프로X강좌</p><br>
+                                        <p>
+                                            로직프로를 처음 접하는 분들에게 무료로 강좌를 제공하고 있습니다.
+                                        </p>
+                                        <div class="icon">
+                                            <img src="../icon/안테나.svg" alt="">
+                                            <span>입문</span>
+                                            <img src="../icon/기술.svg" alt="">
+                                            <span>사운드, 기타 (커리어)</span> <br>
+                                            <img src="../icon/블럭.svg" alt="">
+                                            <span>sound, logic, midi</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="adiv">
+                            <a href="">
+                                <img src="../image/영화 예매 사이트.png" alt="">
+                                <div class="text">
+                                    <div class="hdiv">
+                                        <h3>영화 예매 사이트 만들기: 디자인편</h3>
+                                    </div>
+                                    <div>
+                                        <p>webstoryboy</p>
+                                        <p>★★★★★</p>
+                                        <p class="price"> 무료</p>
+                                    </div>
+                                    <div class="spandiv">
+                                        <span>+800명</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="adiv_hover">
+                                <a href="">
+                                    <div class="textT">
+                                        <p>영화 예매 사이트 만들기: 디자인편</p><br>
+                                        <p>
+                                            영화 예매 사이트 제작을 디자인편과 코딩편으로 나누어 학습합니다.
+                                        </p>
+                                        <div class="icon">
+                                            <img src="../icon/안테나.svg" alt="">
+                                            <span>초급</span>
+                                            <img src="../icon/기술.svg" alt="">
+                                            <span>웹 개발, 웹 퍼블리싱, 그래픽 디자인</span> <br>
+                                            <img src="../icon/블럭.svg" alt="">
+                                            <span>Photoshop, 반응형 웹</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" id="btn">더 보기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="inner">
+            <div class="footer1">
+                <ul>
+                    <li><a href="">기업 제휴 및 입점 문의</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">사이트맵</a></li>
+                </ul>
+                <hr>
+            </div>
+            <div class="footer2">
+                <span>이젠 온라인클래스</span>
+                <span>대표이사 : 이젠</span>
+                <span>사업자등록번호 : 123-45-67890</span>
+                <span>주소 : 인천광역시 남동구 인주대로593 엔타스빌딩 12층</span>
+                <span>대표번호 : 1544-8147</span>
+            </div>
+            <div class="footer3">
+                <span>Copyright by EZEN. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/ClassPage_M.js"></script>
+</body>
+</html>

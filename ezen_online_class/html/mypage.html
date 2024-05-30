@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyPage</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/mypage.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/mypage_header.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <div class="inner">
+        <form action="">
+            <div class="top">
+                <div class="top_part">
+                    <a href="../html/main.html">
+                        <div class="logo_img"></div>
+                    </a>
+                    <div class="search_part">
+                        <img src="../image/search_icon.png" alt="" width="13px" height="13px">
+                        <input type="text" class="search_bar" placeholder="찾고싶은 강의를 입력하세요">
+                    </div>
+                    <div class="inner sectionBox1">
+                        <button type="button" id="mypageBtn"><a href="../html/mypage.html">마이페이지</a></button>
+                        <button type="button" id="loginBtn"><a href="../html/login.html">로 그 인</a></button>
+                        <button type="button" id="joinBtn"><a href="../html/signup.html">회원가입</a></button>
+                    </div>
+                </div>
+            </div>
+            <!-- 메뉴바 -->
+            <nav>
+                <div class="menubar">
+                    <ul>
+                        <li class="cate">
+                            <li class="big">.     </li>
+                            <div class="cate_text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                                <div class="text">카테고리</div>
+                            </div>
+                        </li>
+                    <li class="big"><a href="../html/ClassPage_M.html">강    의</a>
+                        <ul>
+                            <li><a href="../html/ClassPage_M.html">개발 · 프로그래밍</a></li>
+                            <li><a href="../html/ClassPage_M.html">요리 · 음료</a></li>
+                            <li><a href="../html/ClassPage_M.html">디자인</a></li>
+                            <li><a href="../html/ClassPage_M.html">금융 · 재테크</a></li>
+                            <li><a href="../html/ClassPage_M.html">뷰티</a></li>
+                        </ul>
+                    </li>
+                    <li class="big"><a href="../html/teacherCard.html">강 사 진</a>
+                        <ul>
+                            <li><a href="../html/teacherCard.html">강사소개</a></li>
+                        </ul>
+                    </li>
+                    <li class="big"><a href="../html/infromation.html">상담신청</a>
+                        <ul>
+                            <li><a href="../html/infromation.html">10초 안내받기</a></li>
+                        </ul>
+                    </li>
+                    <li class="big"><a href="../html/faq.html">공지사항</a>
+                        <ul>
+                            <li><a href="../html/faq.html">FAQ</a></li>
+                            <li><a href="../html/faq.html">이용문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </form>
+    </div>
+</header>
+  <div class="wrap">
+    <div class="menu"></div>
+    <div class="content">
+      <div class="myInfo">
+        <div class="user_name">홍길동</div>
+        <div class="user_info">
+          <div class="info1">수강평 0</div>
+          <div class="info2">평균평점 0.0</div>
+        </div>
+        <div class="categori">
+          <hr>
+          <ul>
+             <li><a href="">내 정보</a></li>
+             <li><a href="">내가 쓴 게시글</a></li>
+             <li><a href="">비밀번호 변경</a></li>
+          </ul>
+          <hr>
+        </div>
+      </div>
+      <div class="dashboard">
+        <div class="line"></div>
+        <div class="title">마이페이지</div>
+        <div class="dash1">
+          <div class="recen">
+            최근 학습 강의
+            <button type="button" class="plus">강의 둘러보기
+              <img src="../image/arrow_icon.png" alt="">
+            </button>
+          </div>
+          <div class="now">
+            학습중인 강의
+            <a href="" class="more">전체보기<img src="../image/arrow_icon.png" alt=""></a>
+            <ul>
+              <div class="list_img">
+                <li><img src="../image/book.png" alt="" width="24px" height="24px"></li>
+                <li><img src="../image/book.png" alt="" width="24px" height="24px"></li>
+                <li><img src="../image/book.png" alt="" width="24px" height="24px"></li>
+                <li><img src="../image/book.png" alt="" width="24px" height="24px"></li>
+              </div>
+              <li class="lt first"><a href="">스프링 핵심 원리</a></li>
+              <li class="lt se"><a href="">함수형 프로그래밍과 JavaScript ES6+</a></li>
+              <li class="lt se"><a href="">웹 기획의 새로운 방식, Figma!</a></li>
+              <li class="lt se"><a href="">처음하는 SQL과 데이터베이스 부트캠프</a></li>
+            </ul>
+          </div>
+          <div class="agency">
+            소속인증
+            <div class="ezen_text">이젠 아카데미(인천점)</div>
+            <div class="ezen_img"></div>
+          </div>
+        </div>
+        <div class="dash2">
+          <div class="year">
+            연간학습
+            <div class="month">
+              <div>1월</div>
+              <div>2월</div>
+              <div>3월</div>
+              <div>4월</div>
+              <div>5월</div>
+              <div>6월</div>
+              <div>7월</div>
+              <div>8월</div>
+              <div>9월</div>
+              <div>10월</div>
+              <div>11월</div>
+              <div>12월</div>
+            </div>
+            <div class="week">
+              <div>일</div>
+              <div class="wed">수</div>
+              <div class="mon">월</div>
+            </div>
+            <div class="box grid"><img src="../image/그래프1.png" alt="" class="graph" width="197px" height="97px"></div>
+            <div class="year_bt">
+              <div class="month_time">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                </svg>
+                일평균 학습시간
+              </div>
+              <div class="study_time">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
+                  <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9z"/>
+                  <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1zm1.038 3.018a6 6 0 0 1 .924 0 6 6 0 1 1-.924 0M0 3.5c0 .753.333 1.429.86 1.887A8.04 8.04 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5M13.5 1c-.753 0-1.429.333-1.887.86a8.04 8.04 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1"/>
+                </svg>
+                총 학습
+              </div>
+              <div class="note">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
+                  <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2"/>
+                  <path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0"/>
+                </svg>
+                노트
+              </div>
+            </div>
+            <div class="year_bt2">
+              <div class="month_time_de">33분</div>
+              <div class="study_time_de">10시간 52분</div>
+              <div class="note_de">3개</div>
+            </div>
+          </div>
+          <div class="year2">
+            <button type="button" class="arrow1" onclick="decreaseYear()"></button>
+            <div class="midyear">2024년</div>
+            <button type="button" class="arrow2" onclick="increaseYear()"></button>
+          </div>
+        </div>
+        <div class="dash3">
+          <div class="heart">
+            찜한 강의 / 찜한 강사
+            <a href="" class="more">전체보기<img src="../image/arrow_icon.png" alt=""></a>
+          </div>
+          <div class="complete">
+            수료한 강의
+            <div class="emoji">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-emoji-neutral" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M4 10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5m3-4C7 5.672 6.552 5 6 5s-1 .672-1 1.5S5.448 8 6 8s1-.672 1-1.5m4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5S9.448 8 10 8s1-.672 1-1.5"/>
+              </svg>
+            </div>
+            <div class="text">
+              <div class="text1">
+                아직 수료한 강의가 없습니다!
+              </div>
+              <div class="text2">
+                함께 더 힘내봐요
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/mypage.js"></script>
+</body>
+</html>
